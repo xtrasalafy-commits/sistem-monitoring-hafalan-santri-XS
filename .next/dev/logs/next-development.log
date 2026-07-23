@@ -1,3 +1,2 @@
-{"timestamp":"00:00:02.102","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:09.248","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}
-{"timestamp":"00:00:19.933","source":"Server","level":"ERROR","message":"Login error: Error: Failed query: select \"id\", \"nama_lengkap\", \"email\", \"password_hash\", \"role\", \"no_hp\", \"is_active\", \"foto_url\", \"created_at\" from \"profiles\" where \"profiles\".\"email\" = $1 limit $2\nparams: admin@pondok.id,1"}
+{"timestamp":"00:00:03.030","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:08.332","source":"Browser","level":"INFO","message":"%cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold"}

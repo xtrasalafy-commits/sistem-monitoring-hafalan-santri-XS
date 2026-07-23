@@ -66,8 +66,14 @@ if (!databaseUrl) {
     throw new Error("DATABASE_URL is required");
 }
 const globalForDb = globalThis;
+const isRemote = !databaseUrl.includes("127.0.0.1") && !databaseUrl.includes("localhost");
 const pool = globalForDb.__arenaNextJsPostgresqlPool ?? new __TURBOPACK__imported__module__$5b$externals$5d2f$pg__$5b$external$5d$__$28$pg$2c$__esm_import$2c$__$5b$project$5d2f$node_modules$2f$pg$29$__["Pool"]({
-    connectionString: databaseUrl
+    connectionString: databaseUrl,
+    ...isRemote ? {
+        ssl: {
+            rejectUnauthorized: false
+        }
+    } : {}
 });
 if ("TURBOPACK compile-time truthy", 1) {
     globalForDb.__arenaNextJsPostgresqlPool = pool;

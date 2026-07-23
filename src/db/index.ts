@@ -11,10 +11,13 @@ const globalForDb = globalThis as typeof globalThis & {
   __arenaNextJsPostgresqlPool?: Pool;
 };
 
+const isRemote = !databaseUrl.includes("127.0.0.1") && !databaseUrl.includes("localhost");
+
 export const pool =
   globalForDb.__arenaNextJsPostgresqlPool ??
   new Pool({
     connectionString: databaseUrl,
+    ...(isRemote ? { ssl: { rejectUnauthorized: false } } : {}),
   });
 
 if (process.env.NODE_ENV !== "production") {

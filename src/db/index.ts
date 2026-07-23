@@ -1,5 +1,5 @@
-import { drizzle } from "drizzle-orm/node-postgres";
-import { Pool } from "pg";
+import { drizzle } from "drizzle-orm/postgres-js";
+import postgres from "postgres";
 
 const databaseUrl = process.env.DATABASE_URL;
 
@@ -8,20 +8,17 @@ if (!databaseUrl) {
 }
 
 const globalForDb = globalThis as typeof globalThis & {
-  __arenaNextJsPostgresqlPool?: Pool;
+  __arenaNextJsPostgresqlClient?: ReturnType<typeof postgres>;
 };
 
-const isRemote = !databaseUrl.includes("127.0.0.1") && !databaseUrl.includes("localhost");
-
-export const pool =
-  globalForDb.__arenaNextJsPostgresqlPool ??
-  new Pool({
-    connectionString: databaseUrl,
-    ...(isRemote ? { ssl: { rejectUnauthorized: false } } : {}),
+export const sql =
+  globalForDb.__arenaNextJsPostgresqlClient ??
+  postgres(databaseUrl, {
+    prepare: true,
   });
 
 if (process.env.NODE_ENV !== "production") {
-  globalForDb.__arenaNextJsPostgresqlPool = pool;
+  globalForDb.__arenaNextJsPostgresqlClient = sql;
 }
 
-export const db = drizzle(pool);
+export const db = drizzle(sql);

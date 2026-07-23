@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { BookOpen, ShieldCheck, UserCheck, HeartHandshake, Award, Lock, Mail, ArrowRight } from "lucide-react";
 
 export default function LoginPage() {
@@ -66,7 +67,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FAF7] flex flex-col justify-between selection:bg-emerald-200">
+    <div className="min-h-screen bg-[#F8FAF7] flex flex-col justify-center selection:bg-emerald-200 p-4">
       {/* Top Bar Banner */}
       <div className="bg-[#1B5E43] text-white py-2.5 px-4 text-center text-xs font-medium border-b border-emerald-800">
          بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ • Sistem Monitoring Hafalan Al-Qur&apos;an & Kitab Pondok Pesantren
@@ -210,15 +211,20 @@ export default function LoginPage() {
                   <p className="text-[10px] text-zinc-500 mt-0.5 truncate">pimpinan@pondok.id</p>
                 </button>
               </div>
+
+              <div className="mt-4 pt-4 border-t border-zinc-100 text-center">
+                <Link
+                  href="/docs"
+                  className="text-[11px] font-bold text-[#1B5E43] hover:text-[#154a34] inline-flex items-center gap-1 bg-emerald-50 hover:bg-emerald-100 px-3 py-2 rounded-lg border border-emerald-200 transition"
+                >
+                  <BookOpen className="w-3.5 h-3.5" />
+                  Dokumentasi & Bantuan
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      </main>
-
-      {/* Footer */}
-      <footer className="text-center py-4 text-xs text-zinc-500">
-         © {new Date().getFullYear()} Mutaba&apos;ah Santri • Pondok Pesantren Tahfizh Darul Huffazh
-      </footer>
-    </div>
-  );
-}
+       </main>
+     </div>
+   );
+ }

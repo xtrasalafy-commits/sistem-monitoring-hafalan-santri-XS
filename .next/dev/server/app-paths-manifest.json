@@ -1,15 +1,4 @@
 {
-  "/admin/page": "app/admin/page.js",
-  "/api/auth/login/route": "app/api/auth/login/route.js",
-  "/api/auth/logout/route": "app/api/auth/logout/route.js",
-  "/api/halaqah/route": "app/api/halaqah/route.js",
-  "/api/pengaturan/route": "app/api/pengaturan/route.js",
-  "/api/santri/route": "app/api/santri/route.js",
-  "/api/setoran-quran/route": "app/api/setoran-quran/route.js",
-  "/api/stats/route": "app/api/stats/route.js",
-  "/api/target/route": "app/api/target/route.js",
-  "/api/ustadz/route": "app/api/ustadz/route.js",
-  "/api/wali/route": "app/api/wali/route.js",
   "/login/page": "app/login/page.js",
   "/page": "app/page.js"
 }

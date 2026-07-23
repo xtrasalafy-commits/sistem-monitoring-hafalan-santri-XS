@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { BookOpen, Bell, LogOut, UserCheck } from "lucide-react";
+import { BookOpen, Bell, LogOut, Download } from "lucide-react";
 
 interface HeaderNavProps {
   user: {
@@ -66,6 +66,18 @@ export default function HeaderNav({ user, overdueCount = 0 }: HeaderNavProps) {
 
         {/* User Role Badge & Actions */}
         <div className="flex items-center gap-3">
+          {/* Download Source Code Button */}
+          <a
+            href="https://github.com/xtrasalafy-commits/sistem-monitoring-hafalan-santri-XS"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:flex items-center gap-1.5 bg-amber-400/20 hover:bg-amber-400/30 text-amber-200 hover:text-amber-100 px-3 py-1.5 rounded-lg text-[11px] font-bold transition border border-amber-300/40"
+            title="Download Source Code"
+          >
+            <Download className="w-3.5 h-3.5" />
+            <span>Source Code</span>
+          </a>
+
           {/* Notification Button */}
           <div className="relative">
             <button

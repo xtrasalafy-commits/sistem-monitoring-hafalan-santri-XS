@@ -89,7 +89,9 @@ export default function UstadzPage() {
   };
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     loadData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const triggerAlert = (msg: string) => {
@@ -191,7 +193,7 @@ export default function UstadzPage() {
               Portal Penilaian & Setoran Ustadz
             </h1>
             <p className="text-emerald-100 text-xs sm:text-sm mt-1">
-              Catat setoran hafalan Al-Qur'an dan mutaba'ah kitab santri binaan Anda
+              Catat setoran hafalan Al-Qur&apos;an dan mutaba&apos;ah kitab santri binaan Anda
             </p>
           </div>
 
@@ -374,7 +376,7 @@ export default function UstadzPage() {
             <div className="flex items-center justify-between border-b pb-3">
               <div>
                 <h3 className="text-lg font-black text-[#1B5E43]">Input Setoran Santri</h3>
-                <p className="text-xs text-zinc-500">Form penilaian hafalan Al-Qur'an dan Kitab</p>
+                <p className="text-xs text-zinc-500">Form penilaian hafalan Al-Qur&apos;an dan Kitab</p>
               </div>
               <button
                 onClick={() => setIsInputOpen(false)}
@@ -393,7 +395,7 @@ export default function UstadzPage() {
                   inputTab === "quran" ? "bg-[#1B5E43] text-white shadow-sm" : "text-zinc-600"
                 }`}
               >
-                Setoran Al-Qur'an
+                 Setoran Al-Qur&apos;an
               </button>
               <button
                 type="button"
@@ -434,8 +436,8 @@ export default function UstadzPage() {
                       className="w-full p-2.5 border rounded-xl bg-white text-zinc-900 font-medium"
                     >
                       <option value="hafalan_baru">Hafalan Baru (Ziyadah)</option>
-                      <option value="murajaah">Muraja'ah (Pengulangan)</option>
-                      <option value="tasmi">Tasmi' (Sekali Duduk)</option>
+                       <option value="murajaah">Muraja&apos;ah (Pengulangan)</option>
+                       <option value="tasmi">Tasmi&apos; (Sekali Duduk)</option>
                       <option value="perbaikan">Perbaikan (Tahsin)</option>
                     </select>
                   </div>
@@ -453,7 +455,7 @@ export default function UstadzPage() {
                 {/* 114 Surah Selector (Auto fill juz & ayat) */}
                 <div>
                   <label className="font-bold block mb-1 text-zinc-700">
-                    Pilih Surah Al-Qur'an (114 Surah)
+                     Pilih Surah Al-Qur&apos;an (114 Surah)
                   </label>
                   <select
                     value={formQuran.nomorSurah}
@@ -561,7 +563,7 @@ export default function UstadzPage() {
                   >
                     <option value="lulus">Lulus (Tuntas)</option>
                     <option value="mengulang">Mengulang</option>
-                    <option value="perlu_murajaah">Perlu Muraja'ah Tambahan</option>
+                     <option value="perlu_murajaah">Perlu Muraja&apos;ah Tambahan</option>
                   </select>
                 </div>
 

@@ -69,7 +69,7 @@ export default function LoginPage() {
     <div className="min-h-screen bg-[#F8FAF7] flex flex-col justify-between selection:bg-emerald-200">
       {/* Top Bar Banner */}
       <div className="bg-[#1B5E43] text-white py-2.5 px-4 text-center text-xs font-medium border-b border-emerald-800">
-        بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ • Sistem Monitoring Hafalan Al-Qur'an & Kitab Pondok Pesantren
+         بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ • Sistem Monitoring Hafalan Al-Qur&apos;an & Kitab Pondok Pesantren
       </div>
 
       <main className="flex-1 flex items-center justify-center p-4 py-8">
@@ -82,7 +82,7 @@ export default function LoginPage() {
                 <BookOpen className="w-8 h-8" />
               </div>
               <h1 className="text-2xl font-black text-[#1B5E43] tracking-tight pt-2">
-                Mutaba'ah Santri
+                Mutaba&apos;ah Santri
               </h1>
               <p className="text-xs text-zinc-600">
                 Silakan masuk dengan akun pesantren Anda
@@ -217,7 +217,7 @@ export default function LoginPage() {
 
       {/* Footer */}
       <footer className="text-center py-4 text-xs text-zinc-500">
-        © {new Date().getFullYear()} Mutaba'ah Santri • Pondok Pesantren Tahfizh Darul Huffazh
+         © {new Date().getFullYear()} Mutaba&apos;ah Santri • Pondok Pesantren Tahfizh Darul Huffazh
       </footer>
     </div>
   );

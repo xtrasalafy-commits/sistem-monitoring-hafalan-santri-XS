@@ -52,6 +52,7 @@ export default function WaliPage() {
   };
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     loadData();
   }, []);
 
@@ -92,7 +93,7 @@ export default function WaliPage() {
               Perkembangan Hafalan Ananda
             </h1>
             <p className="text-emerald-100 text-xs sm:text-sm mt-1">
-              Pantau kemajuan hafalan Al-Qur'an dan bimbingan akhlak dari rumah
+              Pantau kemajuan hafalan Al-Qur&apos;an dan bimbingan akhlak dari rumah
             </p>
           </div>
 

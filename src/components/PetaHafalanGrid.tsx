@@ -67,7 +67,7 @@ export default function PetaHafalanGrid({ setoranList, namaSantri }: PetaHafalan
         <div>
           <h3 className="text-lg font-bold text-[#1B5E43] flex items-center gap-2">
             <span className="inline-block w-3 h-3 rounded-full bg-[#1B5E43]"></span>
-            Peta Hafalan 30 Juz Al-Qur'an {namaSantri ? `(${namaSantri})` : ""}
+            Peta Hafalan 30 Juz Al-Qur&apos;an {namaSantri ? `(${namaSantri})` : ""}
           </h3>
           <p className="text-xs text-zinc-600 mt-0.5">
             Klik pada kotak Juz untuk melihat detail surah & kemajuan setoran

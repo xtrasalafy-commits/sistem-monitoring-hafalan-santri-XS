@@ -138,6 +138,7 @@ export default function AdminPage() {
   };
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     loadAllData();
   }, []);
 
@@ -389,7 +390,7 @@ export default function AdminPage() {
                       Grafik Setoran Hafalan (6 Bulan Terakhir)
                     </h3>
                     <p className="text-xs text-zinc-500 mt-0.5">
-                      Jumlah kumulatif setoran Al-Qur'an santri per bulan
+                       Jumlah kumulatif setoran Al-Qur&apos;an santri per bulan
                     </p>
                   </div>
                   <span className="text-xs font-bold bg-emerald-50 text-emerald-900 px-3 py-1 rounded-full border border-emerald-200">
@@ -449,7 +450,7 @@ export default function AdminPage() {
                 </div>
 
                 <div className="mt-4 pt-3 border-t border-zinc-100 text-[11px] text-zinc-500 text-center">
-                  Otomatis terdeteksi oleh sistem mutaba'ah
+                  Otomatis terdeteksi oleh sistem mutaba&apos;ah
                 </div>
               </div>
             </div>
@@ -689,7 +690,7 @@ export default function AdminPage() {
               <div>
                 <h3 className="text-lg font-bold text-[#1B5E43]">Laporan Rekapitulasi Setoran</h3>
                 <p className="text-xs text-zinc-500">
-                  Data rekaman setoran Al-Qur'an pondok pesantren
+                  Data rekaman setoran Al-Qur&apos;an pondok pesantren
                 </p>
               </div>
 

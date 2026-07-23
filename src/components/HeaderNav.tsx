@@ -53,13 +53,13 @@ export default function HeaderNav({ user, overdueCount = 0 }: HeaderNavProps) {
           </div>
           <div>
             <span className="font-extrabold text-lg tracking-tight flex items-center gap-1.5 text-white">
-              Mutaba'ah Santri
+              Mutaba&apos;ah Santri
               <span className="text-[10px] bg-amber-400 text-emerald-950 font-bold px-1.5 py-0.5 rounded">
                 PESANTREN
               </span>
             </span>
             <p className="text-[11px] text-emerald-100/80 leading-none hidden sm:block">
-              Sistem Monitoring Hafalan Al-Qur'an & Kitab
+              Sistem Monitoring Hafalan Al-Qur&apos;an &amp; Kitab
             </p>
           </div>
         </div>

@@ -62,7 +62,7 @@ export default function PimpinanPage() {
               Statistik Global Tahfizh Pesantren
             </h1>
             <p className="text-emerald-100 text-xs sm:text-sm mt-1">
-              Ringkasan performa seluruh halaqah dan kemajuan hafalan Al-Qur'an santri
+              Ringkasan performa seluruh halaqah dan kemajuan hafalan Al-Qur&apos;an santri
             </p>
           </div>
 
@@ -96,7 +96,7 @@ export default function PimpinanPage() {
               <h3 className="text-2xl sm:text-3xl font-black text-amber-600 mt-1">
                 {statsData?.totalSetoranQuran || 65}
               </h3>
-              <span className="text-[11px] text-amber-800 font-medium">Al-Qur'an & Kitab</span>
+              <span className="text-[11px] text-amber-800 font-medium">Al-Qur&apos;an &amp; Kitab</span>
             </div>
             <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center">
               <CalendarCheck className="w-6 h-6" />
@@ -136,7 +136,7 @@ export default function PimpinanPage() {
                 Tren Setoran Hafalan 6 Bulan Terakhir
               </h3>
               <p className="text-xs text-zinc-500 mt-0.5">
-                Kenaikan jumlah setoran seiring peningkatan disiplin mutaba'ah
+                Kenaikan jumlah setoran seiring peningkatan disiplin mutaba&apos;ah
               </p>
             </div>
             <span className="text-xs font-bold bg-emerald-50 text-emerald-900 px-3 py-1 rounded-full border border-emerald-200">
